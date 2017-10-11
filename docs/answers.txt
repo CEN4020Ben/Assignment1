@@ -41,4 +41,13 @@ git log -S "file" --all
 (II) What is polymorphism?  (III) What is encapsulation?  (9 points)
 I. Essentially, inheritance is reuse of variables and functionality through multiple different components.
 II. Polymorphism is poly- multiple, morph- changing. It is self-chaning code achieved through inheritance, especially with virtual functions. A method's functionality changes depending on the child class referred to as parent. You can have 2 classes inheriting from one parent where a function foo() has two separate implementations, called respective of which child is created.
-III. Encapsulation is wrapping functionality inside of objects instead of using free-floating functions. IE: C++'s class compared to C's struct.
+III. Encapsulation is wrapping functionality inside of objects in order to hide some (or all) data from other classes. This improves API security and code completion suggestion. IE: C++'s class compared to C's struct.
+
+
+Is  the  RoleGame  prototype  using  polymorphism  or  encapsulation?   If  you  find  that
+the prototype is using any of these two OOP principles, please discuss in which way the
+prototype is using it.
+
+The prototype is using both polymorphism and encapsulation.
+All weapons are polymorphic in that they inherit from Weapon and implement their own functionality specific to the weapon itself.
+Weapon is also encapsulating data relating to the weapon stats.
