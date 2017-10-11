@@ -1,0 +1,44 @@
+(a)  Please paste the console output you saved at the end of step 3.
+   Counting objects: 7, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 769 bytes | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/CEN4020Ben/Assignment1.git
+   fbdbe93..d7e33e9  master -> master
+
+(b)  How many commits have been done to the repository (not only by you, but
+by anyone) so far?  Please write the git command you used to get this infor-
+mation.  (5 points)
+9
+git rev-list master --count
+(c)  When was the file .gitignore modified last?  Please write the git command you
+used to get this information.  (5 points)
+Date:   Wed Sep 27 16:31:42 2017 -0500
+
+git log .gitignore
+
+(d)  Please list the IDs of the commits used to merge the changes from the branch
+“development” to the branch “master”.  (5 points)
+36a8e55e4bbdd171ab57d979e1a802d740f2db9b
+cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+(e)  Mention two reasons for using branches in a Git repository.  (6 points)
+1. It's safer as you always have a working master branch in case you mess up. You use github/bitbucket pull requests with visual indication of changes. Prevents accidental changes.
+2. You can have multiple release cycles. One for development/beta builds and another for stable/release builds.
+(f)  What is the difference between
+git log
+and
+git status
+?  (5 points)
+(g)  What command would you use to see the commits where “Weapon.h” was
+one of the committed files?  (5 points)
+git log Weapon.h
+(h)  What  command  would  you  use  to  see  the  commits  whose  commit  message
+contains the word “file”?  (5 points)
+git log -S "file" --all
+(i)  In the context of object oriented programming (I) What is inheritance?
+(II) What is polymorphism?  (III) What is encapsulation?  (9 points)
+I. Essentially, inheritance is reuse of variables and functionality through multiple different components.
+II. Polymorphism is poly- multiple, morph- changing. It is self-chaning code achieved through inheritance, especially with virtual functions. A method's functionality changes depending on the child class referred to as parent. You can have 2 classes inheriting from one parent where a function foo() has two separate implementations, called respective of which child is created.
+III. Encapsulation is wrapping functionality inside of objects instead of using free-floating functions. IE: C++'s class compared to C's struct.
